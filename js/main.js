@@ -14,6 +14,9 @@
     alert('Veuillez saisi un nombre !');
     return;
   }
-  alert(`${temperatureCelcius} C° = ${temperatureCelcius * 9 / 5 + 32} F°`);
+
+  let temperatureFahrenheit = temperatureCelcius * 9 / 5 + 32;
+
+  alert(`${temperatureCelcius} C° = ${temperatureFahrenheit} F°`);
 }()); // Main IIFE
 
