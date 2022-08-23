@@ -14,8 +14,6 @@
     alert('Veuillez saisi un nombre !');
     return;
   }
-  let resultat = `Temperature en fahrenheit : ${temperatureCelcius * 9 / 5 + 32}`;
-
-  console.log(resultat);
+  alert(`${temperatureCelcius} C° = ${temperatureCelcius * 9 / 5 + 32} F°`);
 }()); // Main IIFE
 
