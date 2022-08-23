@@ -8,8 +8,14 @@
 (function main() {
   'use strict'; // Demande un interprétation stricte du code
 
-  let a = 'Bonjour';
+  let temperatureCelcius = Number(prompt('Temperature en celcius : '));
 
-  console.log(a);
+  if (isNaN(temperatureCelcius)) {
+    alert('Veuillez saisi un nombre !');
+    return;
+  }
+  let resultat = `Temperature en fahrenheit : ${temperatureCelcius * 9 / 5 + 32}`;
+
+  console.log(resultat);
 }()); // Main IIFE
 
